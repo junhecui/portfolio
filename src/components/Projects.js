@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Projects = () => (
-  <section id="projects" className="py-16 bg-gray-100">
+  <section id="projects" className="py-16 bg-primary">
     <div className="container mx-auto">
       <h2 className="text-3xl font-bold mb-4">Projects</h2>
       <div className="flex flex-wrap">
@@ -11,7 +11,7 @@ const Projects = () => (
             <p>Project description goes here.</p>
           </div>
         </div>
-        {/* Repeat for more projects */}
+        {}
       </div>
     </div>
   </section>
