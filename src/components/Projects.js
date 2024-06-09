@@ -11,7 +11,7 @@ const Projects = () => (
             <p>Project description goes here.</p>
           </div>
         </div>
-        {}
+        {/* Repeat for more projects */}
       </div>
     </div>
   </section>
