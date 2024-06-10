@@ -22,7 +22,7 @@ const Skills = () => (
       <div className="flex flex-wrap justify-center">
         {skills.map(skill => (
           <div key={skill.name} className="m-4 p-6 bg-white rounded-lg shadow-md flex flex-col items-center w-1/5">
-            <img src={skill.icon} alt={skill.name} className="h-20 w-20 mb-4" />
+            <img src={skill.icon} alt={skill.name} className="h-20 w-20 mb-4 transform transition-transform duration-300 hover:scale-125" />
             <p className="text-lg font-semibold">{skill.name}</p>
           </div>
         ))}

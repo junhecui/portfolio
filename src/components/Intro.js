@@ -6,8 +6,8 @@ const Intro = () => (
       <div className="mb-4 md:mb-0 md:mr-8">
         <img
           src={`${process.env.PUBLIC_URL}/profile.jpg`}
-          alt="Your Name"
-          className="rounded-full h-32 w-32"
+          alt="Jun He"
+          className="h-48 w-48 object-cover rounded-lg"
         />
       </div>
       <div className="text-center md:text-left">
@@ -20,7 +20,6 @@ const Intro = () => (
           <a href="https://linkedin.com/in/junhecui" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="h-6 w-6"/>
           </a>
-          {}
         </div>
       </div>
     </div>
