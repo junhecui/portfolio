@@ -9,7 +9,6 @@ const Header = () => (
         <Link className="mx-4 cursor-pointer text-black" to="about" smooth={true} duration={500}>About</Link>
         <Link className="mx-4 cursor-pointer text-black" to="skills" smooth={true} duration={500}>Skills</Link>
         <Link className="mx-4 cursor-pointer text-black" to="projects" smooth={true} duration={500}>Projects</Link>
-        <Link className="mx-4 cursor-pointer text-black" to="contact" smooth={true} duration={500}>Contact</Link>
       </nav>
     </div>
   </header>
