@@ -69,6 +69,14 @@ const projects = [
     ],
     github: 'https://github.com/junhecui/avihavoc',
   },
+  {
+    name: 'Budget App',
+    image: 'https://via.placeholder.com/300',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
+    ],
+    github: 'https://github.com/junhecui/budget-app',
+  },
 ];
 
 const Projects = () => (
