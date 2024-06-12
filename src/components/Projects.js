@@ -18,6 +18,7 @@ const projects = [
     name: 'SiteSpark',
     image: 'https://via.placeholder.com/300',
     languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', 
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', 
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg', 
