@@ -3,7 +3,7 @@ import React from 'react';
 const projects = [
   {
     name: 'WeChat Chatbot',
-    image: 'https://via.placeholder.com/300',
+    image: `${process.env.PUBLIC_URL}/chatbot.png`,
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', 
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', 
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     name: 'SiteSpark',
-    image: 'https://via.placeholder.com/300',
+    image: `${process.env.PUBLIC_URL}/sitespark.png`,
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', 
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     name: 'PreMedTalk',
-    image: 'https://via.placeholder.com/300',
+    image: `${process.env.PUBLIC_URL}/premedtalk.png`,
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', 
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', 
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     name: 'Vita',
-    image: 'https://via.placeholder.com/300',
+    image: `${process.env.PUBLIC_URL}/vita.png`,
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', 
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', 
@@ -57,7 +57,7 @@ const projects = [
   },
   {
     name: 'AviHavoc',
-    image: 'https://via.placeholder.com/300',
+    image: `${process.env.PUBLIC_URL}/avihavoc.png`,
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', 
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', 
@@ -71,7 +71,7 @@ const projects = [
   },
   {
     name: 'Budget App',
-    image: 'https://via.placeholder.com/300',
+    image: `${process.env.PUBLIC_URL}/budget.png`,
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
     ],
@@ -86,7 +86,11 @@ const Projects = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map(project => (
           <div key={project.name} className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src={project.image} alt={project.name} className="w-full h-48 object-cover opacity-80 transition-opacity duration-300 group-hover:opacity-50" />
+            <div className="relative w-full pt-[100%]">
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                <img src={project.image} alt={project.name} className="w h object-contain opacity-80 transition-opacity duration-300 group-hover:opacity-50" />
+              </div>
+            </div>
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gray-900 bg-opacity-75 p-4">
               <h3 className="text-xl font-bold text-white mb-2">{project.name}</h3>
               <div className="flex space-x-4 mb-4">
