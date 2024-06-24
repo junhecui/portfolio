@@ -105,6 +105,11 @@ const Projects = () => (
                   <img key={index} src={icon} alt="Language Icon" className="h-10 w-10" />
                 ))}
               </div>
+              <div className="grid grid-cols-2 gap-4 mb-12 md:grid-cols-3 md:gap-4">
+                {project.skills && project.skills.map((icon, index) => (
+                  <img key={index} src={icon} alt="Skill Icon" className="h-10 w-10" />
+                ))}
+              </div>
               <div className={`flex space-x-4 ${!project.logo && 'justify-center'}`}>
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-white">
                   <svg className="w-10 h-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
