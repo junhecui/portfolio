@@ -100,7 +100,7 @@ const Projects = () => (
             </div>
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gray-900 bg-opacity-75 p-4">
               <h3 className="text-xl font-bold text-white mb-2">{project.name}</h3>
-              <div className="grid grid-cols-2 gap-4 mb-12 md:flex md:space-x-4">
+              <div className="flex space-x-4 mb-12">
                 {project.languages.map((icon, index) => (
                   <img key={index} src={icon} alt="Language Icon" className="h-10 w-10" />
                 ))}
